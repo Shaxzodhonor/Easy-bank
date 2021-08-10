@@ -1,0 +1,60 @@
+// HERO  //
+.hero {
+    position: relative;
+    background-color: #f2f2f2;
+}
+.hero__wrapper {
+    padding-top: 170px;
+    padding-bottom: 170px;
+    position: relative;
+
+}
+.hero__wrapper::before {
+    position: absolute;
+    background-image: url(../images/hero-bg-desktop.png);
+    background-size: 800px auto;
+    background-position: top -50px right 0px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    width: 850px;
+    height: 900px;
+    top: 0px;
+    right: -150px;
+    display: inline-block;
+    
+    content: "";
+}
+.hero__content {
+    width: 447px;
+}
+.hero__title {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #2D314D;
+}
+.hero__text {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+}
+.hero__button {
+    @include site-button;
+}
+.hero__button:hover {
+    @include site-button-hover;
+}
+.hero__phones-img {
+    width: 670px;
+    position: absolute;
+    z-index: 2;
+    top: -70px;
+    right: -188px;
+}

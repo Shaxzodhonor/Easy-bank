@@ -1,0 +1,110 @@
+// CHOOSE-SECTION //
+.choose {
+    background-color:  #F4F5F7;
+    z-index: 1;
+}
+.choose-wrapper {
+    padding-top: 96px;
+    padding-bottom: 94px;
+}
+.choose__title {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+    margin-bottom: 16px;
+}
+.choose__text {
+    width: 635px;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    margin-bottom: 72px;
+}
+.choose__menu {
+    display: flex;
+    align-items: center;
+}
+.choose__item ~ .choose__item {
+    margin-left: 30px;
+}
+.choose__menu {
+    @include reset-list
+}
+.choose__circle {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: $background-gradient;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+}
+.choose__item:first-child .choose__circle::before {
+    background-image: url(../images/bank.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 40px;
+   height: 40px;
+    display: block;
+    content: " ";
+}
+.choose__item:nth-child(2) .choose__circle::before {
+    background-image: url(../images/budget.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 40px;
+   height: 40px;
+    display: block;
+    content: " ";
+}
+.choose__item:nth-child(3) .choose__circle::before {
+    background-image: url(../images/boarding.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 40px;
+   height: 40px;
+    display: block;
+    content: " ";
+}
+.choose__item:last-child .choose__circle::before {
+    background-image: url(../images/api.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 40px;
+   height: 40px;
+    display: block;
+    content: " ";
+}
+.choose__icon {
+    width: 40px;
+    height: 40px;
+}
+.choose__menu-title {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: #2D314D;
+    margin-bottom: 26px;
+}
+.choose__menu-text {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #9597A5;
+}

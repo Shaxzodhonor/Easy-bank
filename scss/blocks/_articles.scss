@@ -1,0 +1,101 @@
+#articles {
+    background-color: #f2f2f2;
+} 
+.articles__wrapper{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.articles__title {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: $color-title;
+}
+.articles__list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.articles__item {
+    width: 255px;
+    background-color: #fff;
+}
+.articles__item:first-child:before {
+    background-image: url(../images/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 200px;
+    display: block;
+    content: " ";
+}
+.articles__item:nth-child(2)::before {
+    background-image: url(../images/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 200px;
+    display: block;
+    content: " ";
+}
+.articles__item:nth-child(3)::before {
+    background-image: url(../images/airoplane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 200px;
+    display: block;
+    content: " ";
+}
+.articles__item:last-child::before {
+    background-image: url(../images/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 200px;
+    display: block;
+    content: " ";
+}
+.articles__item ~ .articles__item {
+    margin-left: 30px;
+}
+.articles__content {
+    margin: 24px;
+}
+.articles__by-name {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: $color-text;   
+}
+.articles__subtitle {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 20px;
+    color: $color-title;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.articles__subtitle:hover {
+    color: $color-text-hover;
+}
+.articles__text {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color:  $color-text;
+    margin-top: 8px;
+    
+}

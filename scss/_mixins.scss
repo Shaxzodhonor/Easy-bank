@@ -1,0 +1,33 @@
+// RESET-LIST//
+
+@mixin reset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+// RESET-LINK //
+
+@mixin reset-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+@mixin site-button {
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 8px 36px 8px 33px;
+    border: none;
+    transition: all 0.3s ease;
+}
+@mixin site-button-hover {
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
