@@ -18,6 +18,7 @@
 .articles__list {
     @include reset-list;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -96,6 +97,24 @@
     font-size: 14px;
     line-height: 18px;
     color:  $color-text;
-    margin-top: 8px;
-    
+    margin-top: 8px;   
+}
+
+// RESPONSIVE //
+
+@include breakpoint-down (1149px) {
+    .articles__title {
+        text-align: center;
+    }
+    .articles__list {
+        justify-content: space-around;
+    }
+    .articles__item:nth-child(1n) {
+        margin: 50px 100px;
+    }
+}
+@include breakpoint-down (950px) {
+    .articles__item:nth-child(1n) {
+        margin: 50px 30px;
+    }
 }

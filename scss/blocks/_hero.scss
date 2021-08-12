@@ -7,24 +7,15 @@
     padding-top: 170px;
     padding-bottom: 170px;
     position: relative;
-
 }
-.hero__wrapper::before {
-    position: absolute;
+.hero {
     background-image: url(../images/hero-bg-desktop.png);
-    background-size: 800px auto;
-    background-position: top -50px right 0px;
+    background-size: 1000px auto;
+    background-position: right -180px top 0px;
     background-repeat: no-repeat;
-    background-attachment: local;
-    width: 850px;
-    height: 900px;
-    top: 0px;
-    right: -150px;
-    display: inline-block;
-    
-    content: "";
 }
 .hero__content {
+    position: relative;
     width: 447px;
 }
 .hero__title {
@@ -52,9 +43,157 @@
     @include site-button-hover;
 }
 .hero__phones-img {
-    width: 610px;
     position: absolute;
-    z-index: 2;
-    top: -1px;
-    right: -150px;
+    width: 616px;
+
+    top: 0px;
+    right: 0px;
+    margin-bottom: -170px;
+    z-index: 1;
+}
+.hero__phones-full-img {
+    display: none;
+}
+
+// RESPONSIVE //
+
+@include breakpoint-down (1250PX) {
+    .hero {
+        background-size: 800px auto;
+        background-position: right -150px top 0px;
+        background-repeat: no-repeat;
+    }
+    .hero__wrapper {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .hero__phones-img {
+    width: 500px;
+
+    top: 0px;
+    right: 0px;
+    }
+}
+@include breakpoint-down (1050PX) {
+    .hero {
+        background-size: 700px auto;
+        background-position: right -150px top 0px;
+        background-repeat: no-repeat;
+    }
+    .hero__wrapper {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .hero__phones-img {
+    width: 420px;
+    top: 40px;
+    }
+    .hero__content {
+        width: 340px;
+    }
+    .hero__title {
+        // margin: 0;
+        font-size: 44px;
+    }
+}
+@include breakpoint-down (860PX) {
+    .hero {
+        background-size: 1000px auto;
+        background-position: right -150px top -100px;
+        background-repeat: no-repeat;
+    }
+    .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .hero__phones-img {
+        display: none;
+    }
+    .hero__phones-full-img {
+        margin-top: -280px;
+        display: block;
+        width: 700px;
+    }
+    .hero__content {
+        width: 450px;
+        text-align: center;
+    }
+    .hero__title {
+        font-size: 54px;
+    }
+}
+@include breakpoint-down (760PX) {
+    .hero {
+        background-size: 750px auto;
+        background-position: right -50px top -100px;
+        background-repeat: no-repeat;
+    }
+    .hero__phones-full-img {
+        margin-top: -220px;
+        display: block;
+        width: 600px;
+    }
+}
+@include breakpoint-down (650PX) {
+    .hero {
+        background-size: 600px auto;
+        background-position: right 0px top -50px;
+        background-repeat: no-repeat;
+    }
+    .hero__phones-full-img {
+        margin-top: -170px;
+        display: block;
+        width: 480px;
+    }
+    .hero__title {
+        font-size: 47px;
+    }
+
+}
+@include breakpoint-down (530PX) {
+    .hero {
+        background-size: 450px auto;
+        background-position: right 0px top 0px;
+        background-repeat: no-repeat;
+    }
+    .hero__phones-full-img {
+        margin-top: -150px;
+        display: block;
+        width: 400px;
+    }
+}
+@include breakpoint-down (470PX) {
+    .hero {
+        background-size: 400px auto;
+        background-position: right 0px top 0px;
+        background-repeat: no-repeat;
+    }
+    .hero__phones-full-img {
+        margin-top: -127px;
+        display: block;
+        width: 350px;
+    }
+    .hero__title {
+        font-size: 37px;
+    }
+    .hero__content {
+        width: 300px;
+    }
+}
+@include breakpoint-down (390PX) {
+    .hero {
+        background-size: 440px auto;
+        background-position: left -320 top -200px;
+        background-repeat: no-repeat;
+    }
+    .hero__phones-full-img {
+        margin-top: -110px;
+        display: block;
+        width: 327px;
+        height: 402px;
+    }
+    .hero__title {
+        font-size: 35px;
+    }
 }
